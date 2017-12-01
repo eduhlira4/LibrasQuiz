@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 91ef563b59899b248ac4bc6d1c628a4e
+timeCreated: 1512107068
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Simply Rounded
+  fontNames:
+  - Simply Rounded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7b38d71733b36a24898c80a0111474b4, type: 3}
+  - {fileID: 12800000, guid: 2c74f7ebe95d161489db047e757a0761, type: 3}
+  - {fileID: 12800000, guid: 42f9db6c5e9f48a45a3db756f47e409c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
