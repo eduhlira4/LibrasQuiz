@@ -1,8 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ControleBotoes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Atividade1.cs">
     <Files>
-      <File FileName="Assets\ControleBotoes.cs" Line="40" Column="32" />
+      <File FileName="Assets\Scripts\PassarScene.cs" Line="21" Column="3" />
+      <File FileName="Assets\Scripts\ControleBotoes.cs" Line="48" Column="34" />
+      <File FileName="Assets\Scripts\Atividade1.cs" Line="45" Column="5" />
+      <File FileName="Assets\Scripts\BoyGirl.cs" Line="23" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

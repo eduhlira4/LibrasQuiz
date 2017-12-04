@@ -108,6 +108,16 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &65810542 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82302188465238534, guid: f0fb41d09276724498b60cf5c4695abf,
+    type: 2}
+  m_PrefabInternal: {fileID: 932799941}
+--- !u!224 &141856409 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1402153396}
 --- !u!1 &286381609
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +130,7 @@ GameObject:
   - component: {fileID: 286381612}
   - component: {fileID: 286381611}
   m_Layer: 5
-  m_Name: Menino
+  m_Name: AlfabetoBNT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +192,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 286381612}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588314929}
+        m_MethodName: PassaCena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Letramento
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &286381612
@@ -280,6 +301,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &588314928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 588314930}
+  - component: {fileID: 588314929}
+  m_Layer: 0
+  m_Name: Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &588314929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 588314928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f56c8be4d71d64c846ecefe570f44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  somBotao: {fileID: 8300000, guid: 6e5500b0d26a75d4b9689ffa25022712, type: 3}
+  tocador: {fileID: 65810542}
+--- !u!4 &588314930
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 588314928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.58184224, y: 0.9651461, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &612988593
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +355,7 @@ GameObject:
   - component: {fileID: 612988596}
   - component: {fileID: 612988595}
   m_Layer: 5
-  m_Name: Menino (2)
+  m_Name: "Exerc\xEDcioBTN"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +417,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 612988596}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588314929}
+        m_MethodName: PassaCena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Atividade1
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &612988596
@@ -477,6 +551,7 @@ RectTransform:
   m_Children:
   - {fileID: 1611293050}
   - {fileID: 841522430}
+  - {fileID: 141856409}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -553,6 +628,153 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 841522429}
+--- !u!1001 &932799941
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.50224036
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.15441576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876967386935048, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f0fb41d09276724498b60cf5c4695abf, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1402153396
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 704900439}
+    m_Modifications:
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224058006759325900, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114594607223143378, guid: 5c2be501e5da0254cbbaffcc7fc836b8,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5c2be501e5da0254cbbaffcc7fc836b8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1431681818
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +787,7 @@ GameObject:
   - component: {fileID: 1431681821}
   - component: {fileID: 1431681820}
   - component: {fileID: 1431681819}
+  - component: {fileID: 1431681824}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -642,6 +865,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1431681824
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431681818}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ea94fe0b37e3d549845c1b3deb3e369, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1611293049
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +955,7 @@ GameObject:
   - component: {fileID: 1611293050}
   - component: {fileID: 1611293052}
   - component: {fileID: 1611293051}
+  - component: {fileID: 1611293053}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -715,6 +1019,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1611293049}
+--- !u!95 &1611293053
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611293049}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b5825b6660f5f1479a6e34cf33cedeb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1650891147
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +1048,7 @@ GameObject:
   - component: {fileID: 1650891150}
   - component: {fileID: 1650891149}
   m_Layer: 5
-  m_Name: Menino (1)
+  m_Name: FamiliaBNT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,7 +1069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258, y: 53}
+  m_AnchoredPosition: {x: 258, y: 72}
   m_SizeDelta: {x: 346, y: 474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1650891149
@@ -789,7 +1110,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1650891150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588314929}
+        m_MethodName: PassaCena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Familia
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1650891150
@@ -899,7 +1231,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1842587649}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588314929}
+        m_MethodName: PassaCena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1842587649

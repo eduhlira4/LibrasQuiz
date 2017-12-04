@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 96136154ad072bf4680a2cf0a0fa63cb
+  - enabled: 1
     path: Assets/Scenes/Letramento.unity
     guid: 1b906510bb3c20445a23c203685087ac
   - enabled: 1
     path: Assets/Scenes/Fases.unity
     guid: d765388e607730143a01d67ec8041d48
+  - enabled: 1
+    path: Assets/Scenes/Familia.unity
+    guid: 16e793ccb7e94144191d12d4b0725ad6
+  - enabled: 1
+    path: Assets/Scenes/BoyGirl.unity
+    guid: 5aad17dffd66a0543a6be0ff635136e3
+  - enabled: 1
+    path: Assets/Scenes/Atividade1.unity
+    guid: 8e22b563c36955c4c8a03f0672a5ecb8
